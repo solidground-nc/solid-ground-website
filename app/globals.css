@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --paper: #ede6d8;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-paper text-bedrock font-serif antialiased;
+    font-feature-settings: "kern";
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Display face for all headings + UI chrome. */
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Archivo", system-ui, sans-serif;
+    letter-spacing: -0.02em;
+    font-stretch: 105%;
+  }
+
+  ::selection {
+    background: #1f3a4d;
+    color: #ede6d8;
+  }
+
+  /* Visible keyboard focus everywhere. */
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible,
+  [tabindex]:focus-visible {
+    outline: 2px solid #1f3a4d;
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+}
+
+@layer components {
+  /* ── Buttons ─────────────────────────────────────────────────────────── */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 font-display font-semibold
+           tracking-tight transition-all duration-200 rounded-full;
+    font-stretch: 100%;
+  }
+  .btn-primary {
+    @apply btn bg-pine text-paper px-6 py-3 text-base shadow-card hover:bg-pine-deep hover:shadow-lift;
+  }
+  .btn-primary-lg {
+    @apply btn bg-pine text-paper px-8 py-4 text-lg shadow-card hover:bg-pine-deep hover:shadow-lift;
+  }
+  .btn-ghost {
+    @apply btn border border-line text-bedrock px-6 py-3 text-base bg-card/60 hover:bg-card hover:border-stone;
+  }
+  .btn-on-dark {
+    @apply btn bg-clay text-paper px-7 py-3.5 text-base hover:bg-clay-soft;
+  }
+
+  /* ── The "answer-first" highlighted block (AI-extraction target) ───────── */
+  .answer-box {
+    @apply relative bg-card border border-line rounded-xl p-6 sm:p-8 shadow-card;
+  }
+  .answer-box::before {
+    content: "";
+    @apply absolute left-0 top-6 bottom-6 w-1 rounded-full bg-clay;
+  }
+
+  /* Eyebrow label — small tracked uppercase utility text. */
+  .eyebrow {
+    @apply font-display text-xs font-semibold uppercase tracking-[0.18em] text-clay;
+  }
+  .eyebrow-muted {
+    @apply font-display text-xs font-semibold uppercase tracking-[0.18em] text-stone;
+  }
+
+  /* ── Long-form article typography ─────────────────────────────────────── */
+  .prose-sg {
+    @apply text-bedrock/90;
+  }
+  .prose-sg p {
+    @apply text-lg leading-relaxed mb-5;
+  }
+  .prose-sg h2 {
+    @apply text-2xl sm:text-3xl font-bold mt-12 mb-4 text-bedrock;
+  }
+  .prose-sg h3 {
+    @apply text-xl font-bold mt-8 mb-3 text-bedrock;
+  }
+  .prose-sg ul {
+    @apply mb-6 space-y-2.5;
+  }
+  .prose-sg ol {
+    @apply mb-6 space-y-4 counter-reset-list;
+  }
+  .prose-sg ul > li {
+    @apply relative pl-6 text-lg leading-relaxed;
+  }
+  .prose-sg ul > li::before {
+    content: "";
+    @apply absolute left-0 top-3 h-1.5 w-1.5 rounded-full bg-clay;
+  }
+  .prose-sg ol > li {
+    @apply relative pl-10 text-lg leading-relaxed;
+    counter-increment: sg-counter;
+  }
+  .prose-sg ol > li::before {
+    content: counter(sg-counter);
+    @apply absolute left-0 top-0.5 flex h-7 w-7 items-center justify-center rounded-full
+           bg-pine-tint text-pine font-display text-sm font-bold;
+  }
+  .prose-sg a {
+    @apply text-pine underline decoration-pine/30 underline-offset-2 hover:decoration-pine transition;
+  }
+  .prose-sg strong {
+    @apply font-semibold text-bedrock;
+  }
+}
+
+@layer utilities {
+  .counter-reset-list {
+    counter-reset: sg-counter;
+  }
+  /* container helper */
+  .container-sg {
+    @apply mx-auto w-full max-w-6xl px-5 sm:px-8;
+  }
+}
+
+/* Respect reduced motion. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
