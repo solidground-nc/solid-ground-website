@@ -27,25 +27,21 @@ export default function AboutPage() {
       <PageHero
         eyebrow="About Solid Ground"
         title="Straight answers and lasting work — not pressure and guesswork."
-        lead={`Solid Ground Crawl Space & Foundation Repair is a locally-owned company launching in ${site.launchSeason} to serve the greater Charlotte metro with crawl space encapsulation, waterproofing, and foundation repair.`}
+        lead={`Solid Ground Crawl Space & Foundation Repair is a locally-owned company launching soon to serve the greater Charlotte metro with crawl space encapsulation, waterproofing, and foundation repair.`}
       />
 
       <article className="container-sg pb-4">
         <div className="prose-sg max-w-prose">
           <h2>The story</h2>
           <p>
-            Solid Ground was founded by{" "}
-            <strong>{site.founderName}</strong>, who has spent{" "}
-            <strong>[X]</strong> years in <strong>[home services / the trades]</strong>{" "}
-            across the Charlotte area. After seeing too many homeowners pay too
+            After seeing too many homeowners pay too
             much for work that didn&apos;t hold — or get scared into repairs they
             didn&apos;t need — we set out to build something different: a crawl
             space and foundation company that treats your home like its own and
             your trust like it&apos;s earned, not assumed.
           </p>
           <p>
-            We&apos;re based right here in <strong>[Waxhaw / Union County]</strong>,
-            and the greater Charlotte metro is our backyard. We know this
+            We&apos;re based right here in the greater Charlotte area. We know this
             region&apos;s clay soil, its humidity, and what it takes to keep a home
             solid from the ground up.
           </p>

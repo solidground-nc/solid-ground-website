@@ -46,9 +46,7 @@ export default function Footer() {
           <div>
             <h2 className="eyebrow-muted !text-paper/50">Get in touch</h2>
             <ul className="mt-4 space-y-2.5 text-sm text-paper/80">
-              <li><a href={site.phoneHref} className="hover:text-clay-soft">{site.phone}</a></li>
-              <li><a href={site.emailHref} className="hover:text-clay-soft">{site.email}</a></li>
-              <li className="pt-1 text-paper/60">{site.regionLabel}</li>
+              <li className="text-paper/60">{site.regionLabel}</li>
             </ul>
             <Link href="/#join" className="btn-on-dark mt-6 !py-3 text-sm">
               Join the list →
@@ -59,11 +57,10 @@ export default function Footer() {
         {/* The identical NAP string — appears on every page by design. */}
         <div className="mt-12 border-t border-line-dark pt-6">
           <p className="text-xs leading-relaxed text-paper/55">
-            {site.name} · {site.regionLabel} · {site.phone} · {site.email}
+            {site.name} · {site.regionLabel}
           </p>
           <p className="mt-2 text-xs text-paper/40">
-            © {new Date().getFullYear()} {site.name}. Pre-launch — opening{" "}
-            {site.launchSeason}.
+            © {new Date().getFullYear()} {site.name}. Launching soon.
           </p>
         </div>
       </div>

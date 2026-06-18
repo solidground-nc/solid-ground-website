@@ -54,7 +54,7 @@ export default function HomePage() {
       <section className="container-sg grid items-center gap-10 pt-10 pb-12 sm:pt-16 lg:grid-cols-[1.05fr_0.95fr] lg:gap-8 lg:pb-16">
         <div className="animate-rise-in">
           <p className="eyebrow">
-            Opening {site.launchSeason} · Greater Charlotte Metro
+            {site.launchSeason} · Greater Charlotte Metro
           </p>
           <h1 className="mt-4 text-[2.6rem] font-extrabold leading-[1.02] text-bedrock sm:text-6xl">
             Charlotte&apos;s crawl space &amp; foundation experts.
@@ -184,7 +184,7 @@ export default function HomePage() {
         <div className="bg-bedrock text-paper">
           <div className="container-sg grid gap-10 py-16 lg:grid-cols-[0.9fr_1.1fr] lg:items-center sm:py-20">
             <div>
-              <p className="eyebrow !text-clay-soft">We open {site.launchSeason}</p>
+              <p className="eyebrow !text-clay-soft">{site.launchSeason}</p>
               <h2 className="mt-3 text-3xl font-bold leading-tight sm:text-4xl">
                 Want first access?
               </h2>

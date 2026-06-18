@@ -133,7 +133,7 @@ export default function FoundationCostPage() {
 
           <h2>How to get an accurate quote</h2>
           <p>
-            Because foundation problems range from a $500 crack seal to a $25,000
+            Because foundation problems range from a $500 crack repair to a $25,000
             piering job, an online estimate can&apos;t tell you what you&apos;ll
             actually pay. A proper inspection identifies the root cause — not just
             the symptom — and a trustworthy company will tell you honestly whether

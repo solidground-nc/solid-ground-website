@@ -17,11 +17,11 @@ export const site = {
 
   // Your live domain once deployed (no trailing slash). Used for canonical URLs,
   // sitemap, structured data. Leave the vercel.app URL until your domain is live.
-  siteUrl: "https://solidgroundcs.com",
+  siteUrl: "https://solidgroundcharlotte.com",
 
   // ── Launch ────────────────────────────────────────────────────────────────
   // Pick your real target season/quarter and keep it identical everywhere.
-  launchSeason: "[Season 2027]",
+  launchSeason: "Launching Soon",
 
   // ── Founder (About page) ────────────────────────────────────────────────────
   founderName: "[Your Name]",
@@ -29,9 +29,9 @@ export const site = {
   // ── Contact / NAP ───────────────────────────────────────────────────────────
   // These appear in the footer on every page — the identical string is what
   // search engines reward. Replace the placeholders.
-  phone: "[phone]",
+  phone: "",
   phoneHref: "tel:+1-000-000-0000", // e.g. tel:+1-704-555-0199
-  email: "[email]",
+  email: "",
   emailHref: "mailto:hello@example.com", // e.g. mailto:hello@solidgroundcharlotte.com
 
   // Region served — kept generic on purpose (no physical storefront required).
@@ -61,6 +61,6 @@ export const site = {
 } as const;
 
 // The footer NAP string — identical everywhere by design.
-export const napString = `${site.name} · ${site.regionLabel} · ${site.phone} · ${site.email}`;
+export const napString = `${site.name} · ${site.regionLabel}`;
 
 export type SiteConfig = typeof site;

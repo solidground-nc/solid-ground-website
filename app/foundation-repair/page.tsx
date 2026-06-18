@@ -58,7 +58,7 @@ export default function FoundationHub() {
       <PageHero
         eyebrow="Foundation Repair"
         title="Cracks, bowing walls, and settlement — solved at the source."
-        lead="Foundation problems range from a $500 crack seal to a major piering job. The honest first step is finding the root cause, not just the symptom."
+        lead="Foundation problems range from a $500 crack repair to a $50,000 major piering job. The honest first step is finding the root cause, not just the symptom."
       />
 
       <article className="container-sg">
