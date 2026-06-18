@@ -17,8 +17,7 @@ export const site = {
 
   // Your live domain once deployed (no trailing slash). Used for canonical URLs,
   // sitemap, structured data. Leave the vercel.app URL until your domain is live.
-  siteUrl: "https://solidgroundcharlotte.com",
-
+   siteUrl: "https://solidgroundcs.com",
   // ── Launch ────────────────────────────────────────────────────────────────
   // Pick your real target season/quarter and keep it identical everywhere.
   launchSeason: "Launching Soon",
