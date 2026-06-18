@@ -17,7 +17,8 @@ export const site = {
 
   // Your live domain once deployed (no trailing slash). Used for canonical URLs,
   // sitemap, structured data. Leave the vercel.app URL until your domain is live.
-   siteUrl: "https://solidgroundcs.com",
+  siteUrl: "https://solidgroundcs.com",
+
   // ── Launch ────────────────────────────────────────────────────────────────
   // Pick your real target season/quarter and keep it identical everywhere.
   launchSeason: "Launching Soon",
@@ -56,7 +57,7 @@ export const site = {
   // CRM, etc.). The API route at /api/early-inspection will forward submissions
   // there. If you leave this blank, submissions are just logged on the server
   // and the form still shows a success message (good for testing pre-launch).
-  formForwardUrl: "", // e.g. "https://formspree.io/f/xxxxxxx"
+  formForwardUrl: "https://script.google.com/macros/s/AKfycbyloHR_4jG937c37hJ_YIYxhLdHhJoTuuW55J4MC4Nln9bmoraylpbyYxaqLqaiLypguQ/exec",
 } as const;
 
 // The footer NAP string — identical everywhere by design.

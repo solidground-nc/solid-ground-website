@@ -31,8 +31,7 @@ export async function POST(request: Request) {
 
   const name = String(data.name ?? "").trim();
   const email = String(data.email ?? "").trim();
-  const phone = String(data.phone ?? "").trim();
-  const message = String(data.message ?? "").trim();
+  const address = String(data.address ?? "").trim();
 
   if (!name || !email) {
     return NextResponse.json(
@@ -44,8 +43,7 @@ export async function POST(request: Request) {
   const payload = {
     name,
     email,
-    phone,
-    message,
+    address,
     source: "early-inspection-form",
     submittedAt: new Date().toISOString(),
   };
