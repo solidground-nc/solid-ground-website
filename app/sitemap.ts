@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { site } from "@/lib/site.config";
+import { locations } from "@/lib/locations";
 
 /**
  * All indexable routes. When you add a page, add its path here so search
@@ -17,6 +18,8 @@ const routes = [
   "/learn/selling-home-wet-crawl-space-mecklenburg",
   "/cost/crawl-space-encapsulation-cost-charlotte",
   "/cost/foundation-repair-cost-charlotte",
+  "/service-areas",
+  ...locations.map((l) => `/service-areas/${l.slug}`),
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

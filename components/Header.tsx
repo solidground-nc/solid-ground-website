@@ -8,6 +8,7 @@ import { site } from "@/lib/site.config";
 const nav = [
   { label: "Crawl Spaces", href: "/crawl-space-encapsulation" },
   { label: "Foundations", href: "/foundation-repair" },
+  { label: "Service Areas", href: "/service-areas" },
   { label: "Learn", href: "/learn" },
   { label: "About", href: "/about" },
 ];

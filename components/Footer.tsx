@@ -28,6 +28,7 @@ export default function Footer() {
               <li><Link href="/foundation-repair" className="hover:text-clay-soft">Foundation Repair</Link></li>
               <li><Link href="/cost/crawl-space-encapsulation-cost-charlotte" className="hover:text-clay-soft">Encapsulation Cost</Link></li>
               <li><Link href="/cost/foundation-repair-cost-charlotte" className="hover:text-clay-soft">Foundation Repair Cost</Link></li>
+              <li><Link href="/service-areas" className="hover:text-clay-soft">Service Areas</Link></li>
             </ul>
           </div>
 
